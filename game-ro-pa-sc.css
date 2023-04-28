@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw; height: 100vh;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.index-game{
+    background-color: #012e40;
+    width: 90%; height: 90%;
+    display: flex; justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    position: relative;
+}
+.index-game .section-game{
+    width: 60%;
+    z-index: 0;
+}
+
+.index-game .section-game > .heder-section{
+    display: flex; justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+.index-game .section-game > .heder-section > .number-gamer{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    width: 120px;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: blue;
+    background-color: #ffffff;
+}
+.index-game .section-game > .heder-section > .number-gamer > span:last-of-type{
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.index-game .section-game > .elment-game{
+    display: flex; align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70%;
+}
+.index-game .section-game > .elment-game.active{
+    display: none;
+}
+
+.index-game .section-game > .elment-game > div{
+    width: 150px; height: 150px;
+    background-color: #ffffff;
+    display: flex; align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.index-game .section-game > .elment-game > .rock{
+    top: -10px; 
+    left: 55%;
+    border: 20px solid #f21b1b;
+}
+
+.index-game .section-game > .elment-game > .paper{
+    top: -10px;
+    right: 55%;
+    border: 20px solid #1ba0f2;
+}
+.index-game .section-game > .elment-game > .scissors{
+    top: 47%; 
+    right: 40%;
+    border: 20px solid #ffb30d;
+}
+
+
+/* options the gamers */
+.index-game .section-game > .options-element{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    position: relative; 
+    display: none;
+}
+.index-game .section-game > .options-element.active{
+    display: flex;
+}
+.index-game .section-game > .options-element > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+}
+
+.index-game .section-game > .options-element > div.option{
+    position: absolute;
+}
+.index-game .section-game > .options-element > div:first-of-type{
+    margin-right: 20px;
+    left: -200px;
+    top: 100px;
+
+}
+.index-game .section-game > .options-element > div:last-of-type{
+    margin-left: 20px;
+    right: 0px;
+    top: 100px;
+    
+}
+.index-game .section-game > .options-element > div.option > div:first-of-type{
+    right: 200px;
+}
+
+.index-game .section-game > .options-element > div > div > div{
+    width: 200px; height: 200px;
+    background-color: #ffffff;
+    display: flex; align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.index-game .section-game > .options-element > div > div.win{
+    border-radius: 50%;
+    border: 150px solid #023b5256;
+    
+}
+.index-game .section-game > .options-element > span.finale{
+    display: flex; flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: none;
+}
+.index-game .section-game > .options-element > span.finesh-2{
+    display: flex;
+    position: absolute;
+    top: 45%; right: 35%;
+}
+.index-game .section-game > .options-element > span.finesh-1{
+    display: flex;
+    position: absolute;
+    top: 70%; right: 40%;
+}
+.index-game .section-game > .options-element > span.finale > span:first-of-type{
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffffff;
+}
+.index-game .section-game > .options-element > span.finale > span:last-of-type{
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 190px;
+    text-align: center;
+}
+.index-game .section-game > .options-element > span.finale > span:last-of-type:hover{
+    color: #f21b1b;
+}
+.index-game .section-game > .options-element > div > span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: absolute;
+    top: -5%;
+    color: #ffffff;
+}
+.index-game .section-game > .options-element > div > span.space{
+ top: -20%;
+}
+.index-game .section-game > .options-element > div > div > .rock{
+    border: 20px solid #f21b1b;
+}
+.index-game .section-game > .options-element > div > div > .paper{
+    border: 20px solid #1ba0f2;
+}
+.index-game .section-game > .options-element > div > div > .scissors{
+    border: 20px solid #ffb30d;
+}
+.index-game  > .rules{
+    width: 100%;
+    display: flex; align-items: flex-end;
+    justify-content: flex-end;
+}
+.index-game > .rules > span{
+    float: right;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* open the ruless of game */
+.index-game > .opasity{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    position: absolute;
+    background-color: rgb(8, 8, 8);
+    z-index: 1;
+    display: none;
+}
+.index-game > .opasity.active{
+    display: block;
+}
+.index-game > .rules-game{
+    background-color: #fff;
+    padding:  30px 20px;
+    position: absolute;
+    border-radius: 5px;
+    top: 20%;
+    z-index: 2;
+    display: none;
+}
+.index-game > .rules-game.active{
+    display: block;
+}
+.index-game > .rules-game > span{
+    display: flex; justify-content: space-between;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #012e40;
+}
+.index-game > .rules-game > span > img{
+    cursor: pointer;
+}
